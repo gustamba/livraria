@@ -13,7 +13,5 @@ public class CalculadoraDeEstoque {
 		livro.aplicaDescontoDe(0.1);
 
 		System.out.println("Valor com desconto: " + livro.valor);
-		
 	}
-
 }
