@@ -4,9 +4,9 @@ public class CalculadoraDeEstoque {
 	public static void main(String[] args) {
 		
 		Livro livro = new Livro();
-		livro.adicionaValor(59.90);
+		livro.setValor(59.90);
 
-		System.out.println("Valor atual: " + livro.retornaValor());
+		System.out.println("Valor atual: " + livro.getValor());
 
 		//livro.valor -= livro.valor * 0.1;
 
@@ -15,6 +15,6 @@ public class CalculadoraDeEstoque {
 		}
 		livro.aplicaDescontoDe(0.1);
 
-		System.out.println("Valor com desconto: " + livro.retornaValor());
+		System.out.println("Valor com desconto: " + livro.getValor());
 	}
 }
