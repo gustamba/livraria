@@ -3,7 +3,9 @@ package livraria;
 public class CalculadoraDeEstoque {
 	public static void main(String[] args) {
 		
-		Livro livro = new Livro();
+		Autor autor = new Autor();
+		autor.setNome("Rodrigo Turini");
+		Livro livro = new Livro(autor);
 		livro.setValor(59.90);
 
 		System.out.println("Valor atual: " + livro.getValor());
