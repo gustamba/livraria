@@ -3,7 +3,7 @@ package livraria;
 public class Livro {
 	private String nome;
 	private String descricao;
-	private double valor;
+	protected double valor;
 	private String isbn;
 	private Autor autor;
 	private boolean impresso;
@@ -35,9 +35,7 @@ public class Livro {
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.3 ) {
 			return false;
-		} else if (!this.impresso && porcentagem > 0.15) {
-			return false;
-		}	
+		}
 		this.valor -= this.valor * porcentagem;
 		return true;
 	}
