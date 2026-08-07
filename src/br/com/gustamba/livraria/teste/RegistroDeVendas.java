@@ -40,7 +40,7 @@ public class RegistroDeVendas {
                 }
             } catch (Exception e) {
                 System.out.println("deu exception no indice " + i);
-                e.printStackTrace();
+                //e.printStackTrace();
             }
         }
         System.out.println("Fui executado!");

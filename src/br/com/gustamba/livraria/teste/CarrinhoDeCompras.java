@@ -1,6 +1,5 @@
 package br.com.gustamba.livraria.teste;
 
-import br.com.gustamba.livraria.produtos.Livro;
 import br.com.gustamba.livraria.produtos.Produto;
 
 public class CarrinhoDeCompras {
@@ -24,7 +23,7 @@ public class CarrinhoDeCompras {
 
     public double getTotal() {
         return total;
-    }
+    } 
 
     public Produto[] getProdutos() {
         return produtos;
