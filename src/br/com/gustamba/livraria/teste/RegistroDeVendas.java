@@ -30,8 +30,22 @@ public class RegistroDeVendas {
 
         System.out.println("Total " + carrinho.getTotal());
         
+        /*
         Produto[] produtos = carrinho.getProdutos();
+        */
         
+        Object[] produtos = carrinho.getProdutos();
+
+        for (Object object : produtos) {
+            try {
+                Produto moldado = (Produto) object;
+                System.out.println(moldado.getValor());
+            } catch (Exception e) {
+                System.out.println("O objeto passado não implementa Produto");
+            }
+        }
+
+        /*
         for (int i = 0; i <= produtos.length; i++) {
         	try {
                 Produto produto = produtos[i];
@@ -43,6 +57,8 @@ public class RegistroDeVendas {
                 //e.printStackTrace();
             }
         }
+        */
         System.out.println("Fui executado!");
+        System.out.println(ebook.toString());
     }
 }
