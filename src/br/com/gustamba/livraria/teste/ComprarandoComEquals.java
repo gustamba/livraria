@@ -1,6 +1,8 @@
-package br.com.gustamba.livraria;
+package br.com.gustamba.livraria.teste;
 
-public class Teste {
+import br.com.gustamba.livraria.Autor;
+
+public class ComprarandoComEquals {
 
     public static void main(String[] args) {
 
